@@ -52,6 +52,22 @@ public class Main {
         course1.students = new Student[100];
         course1.students[0] = student1;
 
+        helperProf helper1 = new helperProf();
+        helperProf helper2 = new helperProf();
+        helperProf helper3 = new helperProf();
+
+        helper1.name = "Hasan Aydın";
+        helper2.name = "Hüseyin Poyraz";
+        helper3.name = "Sami Baki";
+
+        helper1.proffesor = proffesor1;
+        helper2.proffesor = proffesor2;
+        helper3.proffesor = proffesor3;
+
+        System.out.println("Merhaba " + helper1.name + "." + "Yardımcısı olduğunuz Profesör'ün ismi ;" + " " + helper1.proffesor.name);
+        System.out.println("Merhaba " + helper2.name + "." + "Yardımcısı olduğunuz Profesör'ün ismi ;" + " " + helper2.proffesor.name);
+        System.out.println("Merhaba " + helper3.name + "." + "Yardımcısı olduğunuz Profesör'ün ismi ;" + " " + helper3.proffesor.name);
+
         System.out.println("Name of student student1's first course is  " + student1.coursesTaken[0].name);
         System.out.println("Name of student student1's first course's proffesor is " + student1.coursesTaken[0].teacher.name);
         System.out.println("Name of student student1's first course's proffesor's department is " + student1.coursesTaken[0].teacher.department.name);

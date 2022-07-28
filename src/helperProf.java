@@ -4,7 +4,6 @@ public class helperProf {
     String name;
     String dob;
     Proffesor proffesor; //Hangi profesörün yardımcısı olacağı burada belirlenecek.
-
-
+    Course courseGiven;
 
 }

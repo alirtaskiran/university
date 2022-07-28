@@ -1,4 +1,4 @@
-public class Proffesor extends helperProf {
+public class Proffesor{
     String no;
     String name;
     String dob;

@@ -30,6 +30,12 @@ public class Main {
         student3.name = "Metin Sağlam";
         student4.name = "Murat Atılgan";
 
+        student1.coursesTaken = course1;
+        student2.coursesTaken = course2;
+        student3.coursesTaken = course2;
+        student4.coursesTaken = course3;
+
+
         department1.head = proffesor1;
         proffesor1.department = department1;
 
@@ -46,8 +52,8 @@ public class Main {
         proffesor1.advisee[0] = student1;
         student1.advisor = proffesor1;
 
-        student1.coursesTaken = new Course[7];
-        student1.coursesTaken[0] = course1;
+        //student1.coursesTaken = new Course[0];
+        //student1.coursesTaken = course1;
 
         course1.students = new Student[100];
         course1.students[0] = student1;
@@ -60,6 +66,11 @@ public class Main {
         helper2.name = "Hüseyin Poyraz";
         helper3.name = "Sami Baki";
 
+        helper1.courseGiven = course1;
+        helper2.courseGiven = course2;
+        helper3.courseGiven = course3;
+
+
         helper1.proffesor = proffesor1;
         helper2.proffesor = proffesor2;
         helper3.proffesor = proffesor3;
@@ -68,9 +79,9 @@ public class Main {
         System.out.println("Merhaba " + helper2.name + "." + "Yardımcısı olduğunuz Profesör'ün ismi ;" + " " + helper2.proffesor.name);
         System.out.println("Merhaba " + helper3.name + "." + "Yardımcısı olduğunuz Profesör'ün ismi ;" + " " + helper3.proffesor.name);
 
-        System.out.println("Name of student student1's first course is  " + student1.coursesTaken[0].name);
-        System.out.println("Name of student student1's first course's proffesor is " + student1.coursesTaken[0].teacher.name);
-        System.out.println("Name of student student1's first course's proffesor's department is " + student1.coursesTaken[0].teacher.department.name);
+        System.out.println("Name of student student1's first course is  " + student1.coursesTaken.name);
+        System.out.println("Name of student student1's first course's proffesor is " + student1.coursesTaken.teacher.name);
+        System.out.println("Name of student student1's first course's proffesor's department is " + student1.coursesTaken.teacher.department.name);
 
 
     }

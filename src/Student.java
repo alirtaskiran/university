@@ -4,5 +4,5 @@ public class Student {
     String dob;
     Department department;
     Proffesor advisor;
-    Course[] coursesTaken;
+    Course coursesTaken;
 }

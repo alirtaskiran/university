@@ -6,6 +6,7 @@ public class Course {
     String name;
     Department department;
     Proffesor teacher;
+    helperProf teacher2;
     Student[] students;
     String[] days;
     Date time;
